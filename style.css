@@ -30,6 +30,11 @@ header {
   grid-column: 2/4;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  overflow: auto;
+  height: 23vh;
 }
 
 .search-bar {
@@ -37,6 +42,7 @@ header {
   grid-template-columns: 3fr 1fr;
   justify-content: center;
   align-items: center;
+  padding: 0.5rem;
 }
 
 .user-input {
@@ -65,6 +71,51 @@ header {
 .user-icon {
   width: 2rem;
   border-radius: 2rem;
+}
+
+.command {
+  display: grid;
+  grid-template-columns: 1fr 4fr 3fr;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.command-icon {
+  width: 3rem;
+  border-radius: 3rem;
+  margin: auto;
+}
+
+.welcome {
+  color: white;
+  font-weight: bold;
+}
+
+.command-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.new,
+.upload,
+.share {
+  border: none;
+  background-color: #001736;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.new:hover,
+.upload:hover,
+.share:hover {
+  background-color: #79d7fd;
+  color: #001736;
 }
 
 nav {
@@ -140,16 +191,18 @@ main {
   padding-bottom: 1rem;
   align-items: center;
   color: #001736;
+  padding-bottom: 4rem;
 }
 
 .project-headline {
+  margin: 1rem 0;
   margin-left: 1rem;
 }
 
 article {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   padding: 1rem;
   height: 100%;
