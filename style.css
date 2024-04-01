@@ -180,17 +180,16 @@ main {
   grid-column: 2/3;
   grid-row: 2/4;
   display: grid;
-  grid-template-rows: 1fr 7fr;
+  grid-template-rows: 1fr 10fr;
   padding-bottom: 1rem;
   align-items: center;
   color: #001736;
-  padding-bottom: 10rem;
-  overflow-y: auto;
+  height: 100vh;
+  overflow: auto;
 }
 
 .project-headline {
-  margin: 1rem 0;
-  margin-left: 1rem;
+  padding: 1rem;
 }
 
 article {
@@ -199,7 +198,7 @@ article {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   padding: 1rem;
-  height: 100%;
+  padding-bottom: 10rem;
 }
 
 .card {
@@ -241,7 +240,6 @@ aside {
   background-color: #79d7fd;
   padding: 0.5rem;
   height: 100vh;
-  overflow: auto;
   display: flex;
   flex-direction: column;
 }
