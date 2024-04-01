@@ -66,7 +66,6 @@ nav {
 }
 
 svg {
-  color: white;
   width: 1.5rem;
 }
 
@@ -95,6 +94,15 @@ ul > li {
   display: flex;
   align-items: center;
   gap: 1rem;
+  cursor: pointer;
+  color: white;
+  padding: 0.2rem;
+}
+
+li:hover {
+  background-color: #00bbfa;
+  fill: #001736;
+  color: #001736;
 }
 
 main {
